@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>Mylist mlmmj-webinterface</title>
+</head>
+<body>
+
+<h1>Sich einschreiben / austragen.</h1>
+Sowohl das Einschreiben als auch das Austragen &uuml;ber dieses Formular bewirken, dass von dem Email-Listen-Managementprogramm mlmmj eine Email an die eingetragene Emailaddresse versandt wird, und diese Email muss dann noch einmal via "Antwort" aus dem Emailprogramm best&auml;tigt werden. Bei Fragen/Problemen bitte Mail an xxx
+<i>
+Disclaimer: das Webhosting l&auml;uft zwar auf einem genossenschaftlichen Server, der Verteiler wurde aber von mir als Privatperson aufgesetzt, d.h. ich mache keine Versprechen in Hinblick auf professionelles Security-Monitoring - bitte keine sehr wertvollen Emailadressen verwenden und auch keine wirklich vertraulichen Dinge posten. Falls jemand ein bessere Plattform hat, gerne mich wissen lassen ;-)
+</i>
+
+<p>
+<h1>Mich einschreiben auf den Verteiler ""</h1>
+<form action="mlmmj.php" method="post">
+<input name="mailinglist" type="hidden" value="mylist@example.com">
+<input name="job" type="hidden" value="subscribe">
+<input name="email" type="text" size="30" maxlength="254"><br>
+<input type="submit" value="Einschreiben bedigital">
+</form>
+</p>
+
+<p>
+<h1>Mich aus dem Verteiler "" wieder austragen</h1>
+<form action="mlmmj.php" method="post">
+<input name="mailinglist" type="hidden" value="mylist@examle.com">
+<input name="job" type="hidden" value="unsubscribe">
+<input name="email" type="text" size="30" maxlength="254"><br>
+<input type="submit" value="Austragen bedigital">
+</form>
+</p>
+
+(Form based on mlmmj-php-web Copyright (C) 2004 Christoph Thiel <ct at kki dot org>.)
+
+</body>
+</html>
